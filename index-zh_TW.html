@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="zh-TW">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>A Visual Git Reference</title>
+  <title>圖解 Git</title>
   <link rel='stylesheet' type='text/css' href='visual-git-guide.css'>
   <script type="text/javascript" src='visual-git-guide.js'></script>
 </head>
 <body onload="replace_all_PNGs();">
-  <h1 id="top">A Visual Git Reference</h1>
+  <h1 id="top">圖解 Git</h1>
 
   <ul id="language-box">
     <li><a>其他語言 <small>▼</small></a>
@@ -24,37 +24,37 @@
   <p id="link-to-svg">SVG 圖片已被禁用
   <a href="index.html">(開啟 SVG)</a></p>
 
-  <p>This page gives brief, visual reference for the most common commands
-  in git.  Once you know a bit about how git works, this site may solidify
-  your understanding.  If you're interested in how this site was created, see
-  my <a href='http://github.com/MarkLodato/visual-git-guide'>GitHub
+  <p>這裡提供 Git 常用指令的簡短圖解。
+  當您大致了解 Git 如何運作時，這個網站會更深化您的認知。
+  如果您對於這網站如何建立有興趣，請看我的
+  <a href='http://github.com/MarkLodato/visual-git-guide'>GitHub
     repository</a>.</p>
 
-  <h2 id="contents">Contents</h2>
+  <h2 id="contents">目錄</h2>
   <ol>
-    <li><a href="#basic-usage">Basic Usage</a></li>
-    <li><a href="#conventions">Conventions</a></li>
-    <li><a href="#commands-in-detail">Commands in Detail</a>
+    <li><a href="#basic-usage">基本用法</a></li>
+    <li><a href="#conventions">範例</a></li>
+    <li><a href="#commands-in-detail">指令中的細節</a>
       <ol>
         <li><a href="#diff">Diff</a></li>
         <li><a href="#commit">Commit</a></li>
         <li><a href="#checkout">Checkout</a></li>
-        <li><a href="#detached">Committing with a Detached HEAD</a></li>
+        <li><a href="#detached">Commit 一個被 detached 的 HEAD</a></li>
         <li><a href="#reset">Reset</a></li>
         <li><a href="#merge">Merge</a></li>
         <li><a href="#cherry-pick">Cherry Pick</a></li>
         <li><a href="#rebase">Rebase</a></li>
       </ol>
     </li>
-    <li><a href="#technical-notes">Technical Notes</a></li>
+    <li><a href="#technical-notes">技術說明</a></li>
   </ol>
 
-  <h2 id="basic-usage">Basic Usage</h2>
+  <h2 id="basic-usage">基本用法</h2>
 
   <div class="center"><img src='basic-usage.svg.png'></div>
 
-  <p>The four commands above copy files between the working directory, the
-  stage (also called the index), and the history (in the form of commits).</p>
+  <p>上面四個指令將檔案在工作目錄 (working directory),
+  工作階段 (stage) (也稱作 index), 和歷史 (history) (以 commits 的形式) 之間複製</p>
 
   <ul>
 
